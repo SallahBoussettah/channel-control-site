@@ -21,10 +21,10 @@
   <div class="date">Channel Control · Last updated October 13, 2026</div>
 
   <h2>Who uses Channel Control</h2>
-  <p>Channel Control is a private tool used by one person, its owner, to manage the YouTube channels he owns. It has no other users and no public sign-up.</p>
+  <p>Channel Control is a private tool used by one person, its owner, to manage their own YouTube channels. It has no other users and no public sign-up.</p>
 
   <h2>Data accessed through YouTube API Services</h2>
-  <p>Channel Control uses YouTube API Services. When the owner connects one of his channels, it receives permission to:</p>
+  <p>Channel Control uses YouTube API Services. When the owner connects one of their channels, it receives permission to:</p>
   <ul>
     <li>upload videos, set their thumbnails, titles, descriptions and publish times on that channel;</li>
     <li>read that channel's videos, their privacy and schedule status, and basic channel statistics (subscribers, views).</li>
@@ -35,10 +35,19 @@
   <p>The data is used only to publish and schedule the owner's videos and to show the owner which videos are posted, scheduled or due. It is never sold, shared with third parties, used for advertising, or combined with other data.</p>
 
   <h2>How the data is stored</h2>
-  <p>Sign-in tokens are stored on the owner's own computers and servers, readable only by the owner's accounts. Video information is kept only as long as the owner manages the channel, and the owner can delete it at any time.</p>
+  <p>Sign-in tokens are stored encrypted on the owner's own computer and servers, readable only by the owner's accounts. Nothing is stored on third-party services.</p>
+  <ul>
+    <li>Channel statistics and video lists read from YouTube are held in memory and refreshed every 30 minutes while a channel is connected. They are not written to disk and are dropped when the channel is disconnected.</li>
+    <li>The tool keeps its own record of the videos it uploads (title, description, upload date and YouTube video ID). This record is refreshed against YouTube at least every 30 minutes while the channel is connected; no data obtained from YouTube is kept for more than 30 days without being refreshed.</li>
+  </ul>
 
-  <h2>Revoking access</h2>
-  <p>Access can be removed at any time from the tool, or from the Google Account security settings at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+  <h2>Deleting data and revoking access</h2>
+  <ul>
+    <li>Disconnecting a channel in the tool deletes its sign-in token immediately.</li>
+    <li>Access can also be revoked at any time from the Google Account security settings at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. The token then stops working immediately and the tool can no longer read or change that channel.</li>
+    <li>Any record of a video can be deleted at any time from the tool ("Remove from library" or "Delete everything").</li>
+    <li>To ask for deletion of any data, write to the contact address below; it is done within 7 days.</li>
+  </ul>
 
   <h2>YouTube and Google policies</h2>
   <p>By using a channel connected to Channel Control you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of data is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
@@ -46,7 +55,7 @@
   <h2>Contact</h2>
   <p>Questions about this policy: <a href="mailto:boussettah.dev@gmail.com">boussettah.dev@gmail.com</a></p>
 
-  <footer><a href="index.html">Channel Control</a></footer>
+  <footer><a href="index.html">Channel Control</a> · <a href="terms.html">Terms of Service</a></footer>
 </main>
 </body>
 </html>
