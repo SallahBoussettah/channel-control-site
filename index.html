@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Channel Control</title>
+<meta name="description" content="Channel Control is a private tool its owner uses to publish and schedule videos on the YouTube channels he owns.">
+<style>
+  :root { --bg: #fff; --text: #222; --muted: #666; --line: #ececec; --accent: #ff4d2e; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #141414; --text: #ececec; --muted: #9a9a9a; --line: #262626; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 64px 20px; }
+  .logo { width: 44px; height: 44px; border-radius: 12px; background: var(--accent); display: grid; place-items: center; margin-bottom: 20px; }
+  h1 { font-size: 30px; margin: 0 0 8px; } h2 { font-size: 18px; margin: 32px 0 8px; }
+  p, li { color: var(--muted); } a { color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <div class="logo"><svg width="18" height="18" viewBox="0 0 18 18"><path d="M5 3l10 6-10 6z" fill="#fff"/></svg></div>
+  <h1>Channel Control</h1>
+  <p>Channel Control is a private, single-user tool. Its owner uses it to plan, publish and schedule videos on the YouTube channels he owns and manages. It is not offered to the public and has no other users.</p>
+  <h2>What it does with YouTube</h2>
+  <ul>
+    <li>Uploads finished videos, with their title, description and thumbnail, to the owner's own channels.</li>
+    <li>Schedules when those videos go public.</li>
+    <li>Reads the owner's own channels (their videos, scheduled uploads and statistics) to show what has been posted and what is due next.</li>
+  </ul>
+  <p>It uses the YouTube Data API through YouTube API Services and only acts on channels whose owner has signed in and connected them.</p>
+  <footer><a href="privacy.html">Privacy policy</a> · <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> · <a href="https://policies.google.com/privacy">Google Privacy Policy</a></footer>
+</main>
+</body>
+</html>
